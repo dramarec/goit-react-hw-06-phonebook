@@ -81,7 +81,6 @@ class Form extends Component {
 }
 
 const mapStateToProps = state => ({
-    // contacts: state.reducerContacts.contacts,
     showUsedAlert: state.reducerContacts.showUsedAlert,
     showEmptyAlert: state.reducerContacts.showEmptyAlert,
 });
