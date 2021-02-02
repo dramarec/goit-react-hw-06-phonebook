@@ -36,13 +36,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = {
     deleteContact: deleteContact,
 };
-// const mapDispatchToProps = dispatch => {
-//     return {
-//         deleteContact: id => {
-//             dispatch(deleteContact(id));
-//         },
-//     };
-// };
+
 export default connect(mapStateToProps, mapDispatchToProps)(ContactsList);
 
 ContactsList.propTypes = {

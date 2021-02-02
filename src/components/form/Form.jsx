@@ -13,13 +13,13 @@ class Form extends Component {
         number: '',
     };
 
-    componentDidMount() {
-        if (localStorage.getItem('contacts')) {
-            this.props.getAllContacts(
-                JSON.parse(localStorage.getItem('contacts')),
-            );
-        }
-    }
+    // componentDidMount() {
+    //     if (localStorage.getItem('contacts')) {
+    //         this.props.getAllContacts(
+    //             JSON.parse(localStorage.getItem('contacts')),
+    //         );
+    //     }
+    // }
 
     componentDidUpdate() {
         if (this.props.showUsedAlert || this.props.showEmptyAlert) {
@@ -84,6 +84,7 @@ const mapStateToProps = state => ({
     showUsedAlert: state.reducerContacts.showUsedAlert,
     showEmptyAlert: state.reducerContacts.showEmptyAlert,
 });
+
 const mapDispatchToProps = {
     onAddContact: addNewContact,
     setAlert,
